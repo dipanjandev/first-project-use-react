@@ -1,8 +1,8 @@
 [
   {
     "playerName": "Virat Kohli",
-    "PlayerPrice": "₹15,00,00,000",
-    "playerPicture": "https://example.com/images/virat-kohli.jpg",
+    "PlayerPrice": "15,00,00,000",
+    "playerPicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPDQIuKYDW-BdZWefjauFEyZ9mYlDQKwtRL4HJFz0acsgA6yTPACtH3byQ&s=10",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
     "playerType": "Batter",
@@ -10,8 +10,8 @@
   },
   {
     "playerName": "Jasprit Bumrah",
-    "PlayerPrice": "₹12,00,00,000",
-    "playerPicture": "https://example.com/images/jasprit-bumrah.jpg",
+    "PlayerPrice": "12,00,00,000",
+    "playerPicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPDQIuKYDW-BdZWefjauFEyZ9mYlDQKwtRL4HJFz0acsgA6yTPACtH3byQ&s=10",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast",
     "playerType": "Bowler",
@@ -19,8 +19,8 @@
   },
   {
     "playerName": "Ben Stokes",
-    "PlayerPrice": "₹16,25,00,000",
-    "playerPicture": "https://example.com/images/ben-stokes.jpg",
+    "PlayerPrice": "16,25,00,000",
+    "playerPicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPDQIuKYDW-BdZWefjauFEyZ9mYlDQKwtRL4HJFz0acsgA6yTPACtH3byQ&s=10",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm fast-medium",
     "playerType": "All-rounder",
@@ -28,8 +28,8 @@
   },
   {
     "playerName": "Rishabh Pant",
-    "PlayerPrice": "₹16,00,00,000",
-    "playerPicture": "https://example.com/images/rishabh-pant.jpg",
+    "PlayerPrice": "16,00,00,000",
+    "playerPicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPDQIuKYDW-BdZWefjauFEyZ9mYlDQKwtRL4HJFz0acsgA6yTPACtH3byQ&s=10",
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm offbreak",
     "playerType": "Wicketkeeper-Batter",
@@ -37,8 +37,17 @@
   },
   {
     "playerName": "Rashid Khan",
-    "PlayerPrice": "₹15,00,00,000",
-    "playerPicture": "https://example.com/images/rashid-khan.jpg",
+    "PlayerPrice": "15,00,00,000",
+    "playerPicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPDQIuKYDW-BdZWefjauFEyZ9mYlDQKwtRL4HJFz0acsgA6yTPACtH3byQ&s=10",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm legbreak googly",
+    "playerType": "Bowler",
+    "price": 150000000
+  },
+  {
+    "playerName": "Dipanjan Roy",
+    "PlayerPrice": "15,00,00,0000",
+    "playerPicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPDQIuKYDW-BdZWefjauFEyZ9mYlDQKwtRL4HJFz0acsgA6yTPACtH3byQ&s=10",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm legbreak googly",
     "playerType": "Bowler",

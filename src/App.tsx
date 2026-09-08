@@ -1,8 +1,8 @@
 import { Suspense } from "react";
-import { Baner } from "./components/baner";
-import { Navbar } from "./components/navbar";
-import Players from "./components/Players/players";
-import type { PlayersTypes } from "./types/types";
+import { Baner } from "./components/Baner";
+import { Navbar } from "./components/NavBar";
+import Players from "./components/Players/Players";
+import type { PlayersTypes } from "./Types/Types";
 
 const playersfatch = async (): Promise<PlayersTypes[]> => {
   const res = await fetch("/public/data.json");
