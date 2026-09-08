@@ -1,0 +1,47 @@
+[
+  {
+    "playerName": "Virat Kohli",
+    "PlayerPrice": "₹15,00,00,000",
+    "playerPicture": "https://example.com/images/virat-kohli.jpg",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "playerType": "Batter",
+    "price": 150000000
+  },
+  {
+    "playerName": "Jasprit Bumrah",
+    "PlayerPrice": "₹12,00,00,000",
+    "playerPicture": "https://example.com/images/jasprit-bumrah.jpg",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "playerType": "Bowler",
+    "price": 120000000
+  },
+  {
+    "playerName": "Ben Stokes",
+    "PlayerPrice": "₹16,25,00,000",
+    "playerPicture": "https://example.com/images/ben-stokes.jpg",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm fast-medium",
+    "playerType": "All-rounder",
+    "price": 162500000
+  },
+  {
+    "playerName": "Rishabh Pant",
+    "PlayerPrice": "₹16,00,00,000",
+    "playerPicture": "https://example.com/images/rishabh-pant.jpg",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "playerType": "Wicketkeeper-Batter",
+    "price": 160000000
+  },
+  {
+    "playerName": "Rashid Khan",
+    "PlayerPrice": "₹15,00,00,000",
+    "playerPicture": "https://example.com/images/rashid-khan.jpg",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm legbreak googly",
+    "playerType": "Bowler",
+    "price": 150000000
+  }
+]
