@@ -9,7 +9,7 @@ const PlayerCard = ({ player }: { player: PlayersTypes }) => {
       {/* Top Section: Media & Header */}
       <div>
         {/* Image Container with fixed ratio */}
-        <div className="relative overflow-hidden rounded-2xl bg-gray-100 aspect-[16/10] mb-4">
+        <div className="relative overflow-hidden rounded-2xl bg-gray-100 aspect-16/10 mb-4">
           <img
             src={player.playerPicture}
             alt={player.playerName}
