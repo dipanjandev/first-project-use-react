@@ -1,3 +1,5 @@
+//App.tsx
+
 import { Suspense, useState } from "react";
 import { Baner } from "./components/Baner";
 import { Navbar } from "./components/NavBar";

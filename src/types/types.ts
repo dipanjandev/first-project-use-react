@@ -1,3 +1,5 @@
+// Type.ts
+
 export interface PlayersTypes {
   playerName: string;
   PlayerPrice: string;

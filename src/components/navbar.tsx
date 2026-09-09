@@ -1,3 +1,5 @@
+// NavBar.tsx
+
 import { AiFillDollarCircle } from "react-icons/ai";
 import logoHeader from "../assets/logo.png";
 

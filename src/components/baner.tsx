@@ -1,3 +1,5 @@
+// Baner.tsx
+
 import banerPhoto from "../assets/banner-main.png";
 
 export function Baner() {
