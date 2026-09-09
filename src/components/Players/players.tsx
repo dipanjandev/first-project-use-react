@@ -14,8 +14,10 @@ const Players = ({ playersPromise, coin, setCoin }: iPlayerProps) => {
   const usePlayer = use(playersPromise);
   //   console.log("Players Log Test :", usePlayer);
 
-  const [buttonType, setButtonType] = useState("available");
-  const [selectedPlayers, setSelectedPlayers] = useState([]);
+  const [buttonType, setButtonType] = useState<"available" | "selected">(
+    "available",
+  );
+  const [selectedPlayers, setSelectedPlayers] = useState<PlayersTypes[]>([]);
 
   const handalerSetButtonType = (type: "available" | "selected") => {
     //ekhane togole kora holo
