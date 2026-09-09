@@ -1,13 +1,15 @@
-import { use, useState } from "react";
+import { use, useState, type Dispatch, type SetStateAction } from "react";
 import AvailablePlayers from "./AvailablePlayers";
 import type { PlayersTypes } from "../../Types/Types";
 import SelectedPlayers from "./SelectedPlayers";
 
-interface playerProps {
+interface iPlayerProps {
   playersPromise: Promise<PlayersTypes[]>;
+  coin: number;
+  setCoin: Dispatch<SetStateAction<number>>;
 }
 
-const Players = ({ playersPromise }: playerProps) => {
+const Players = ({ playersPromise, coin, setCoin }: iPlayerProps) => {
   //   console.log(playersPromise);
   const usePlayer = use(playersPromise);
   //   console.log("Players Log Test :", usePlayer);
@@ -46,7 +48,11 @@ const Players = ({ playersPromise }: playerProps) => {
       </div>
       <div>
         {buttonType === "available" ? (
-          <AvailablePlayers usePlayer={usePlayer} />
+          <AvailablePlayers
+            usePlayer={usePlayer}
+            coin={coin}
+            setCoin={setCoin}
+          />
         ) : (
           <SelectedPlayers />
         )}

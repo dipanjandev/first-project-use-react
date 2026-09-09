@@ -6,7 +6,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
     "playerType": "Batter",
-    "price": 150000000
+    "price": 700
   },
   {
     "playerName": "Jasprit Bumrah",
@@ -15,7 +15,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast",
     "playerType": "Bowler",
-    "price": 120000000
+    "price": 900
   },
   {
     "playerName": "Ben Stokes",
@@ -24,7 +24,7 @@
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm fast-medium",
     "playerType": "All-rounder",
-    "price": 162500000
+    "price": 1200
   },
   {
     "playerName": "Rishabh Pant",
@@ -33,7 +33,7 @@
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm offbreak",
     "playerType": "Wicketkeeper-Batter",
-    "price": 160000000
+    "price": 1500
   },
   {
     "playerName": "Rashid Khan",
@@ -42,7 +42,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm legbreak googly",
     "playerType": "Bowler",
-    "price": 150000000
+    "price": 2000
   },
   {
     "playerName": "Dipanjan Roy",
@@ -51,6 +51,6 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm legbreak googly",
     "playerType": "Bowler",
-    "price": 150000000
+    "price": 2500
   }
 ]

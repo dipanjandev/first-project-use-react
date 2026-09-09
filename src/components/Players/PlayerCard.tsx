@@ -2,8 +2,33 @@ import type { PlayersTypes } from "../../Types/Types";
 import { FaUser } from "react-icons/fa";
 import { MdSportsCricket } from "react-icons/md";
 import { GiCricketBat } from "react-icons/gi";
+import { useState, type Dispatch, type SetStateAction } from "react";
+import { toast } from "react-toastify";
 
-const PlayerCard = ({ player }: { player: PlayersTypes }) => {
+interface iPropsForType {
+  player: PlayersTypes;
+  coin: number;
+  setCoin: Dispatch<SetStateAction<number>>;
+}
+
+const PlayerCard = ({ player, coin, setCoin }: iPropsForType) => {
+  const [isSelected, setIsSelected] = useState(false);
+  // console.log(active);
+  // console.log(coin, setCoin);
+  // console.log(coin);
+
+  const handleClickForCoin = () => {
+    setIsSelected(true);
+    const newCoinPrice = coin - player.price;
+
+    if (newCoinPrice >= 0) {
+      setCoin(newCoinPrice);
+      toast.success(`${player.playerName} Purchached Successfully.`);
+    } else {
+      toast.error("No Enough Coin for buy.");
+    }
+  };
+
   return (
     <div className="group bg-white border border-gray-100 rounded-3xl p-5 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
       {/* Top Section: Media & Header */}
@@ -59,13 +84,20 @@ const PlayerCard = ({ player }: { player: PlayersTypes }) => {
           <p className="text-[11px] uppercase tracking-wider text-gray-400 font-semibold">
             Price
           </p>
-          <p className="text-base font-extrabold text-gray-900">
-            {player.PlayerPrice}
+          <p className="text-base font-extrabold text-gray-900 flex items-center">
+            ${player.price}
           </p>
         </div>
 
-        <button className="bg-[#E7FE29] hover:bg-[#d8ed22] text-black font-semibold text-sm px-4 py-2 rounded-xl border border-black/10 shadow-xs hover:shadow transition-all duration-200 active:scale-95 cursor-pointer">
-          Choose Player
+        <button
+          onClick={() => handleClickForCoin()}
+          className={`text-sm font-semibold px-4 py-2 rounded-xl border border-black/10 shadow-xs transition-colors ${
+            isSelected === true
+              ? "bg-gray-300 text-gray-500"
+              : "bg-[#E7FE29] text-black hover:bg-[#d8ed24] cursor-pointer"
+          }`}
+        >
+          {isSelected ? "Selected" : "Choose Player"}
         </button>
       </div>
     </div>

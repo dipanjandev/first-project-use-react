@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import { Baner } from "./components/Baner";
 import { Navbar } from "./components/NavBar";
 import Players from "./components/Players/Players";
@@ -13,13 +13,18 @@ const playersfatch = async (): Promise<PlayersTypes[]> => {
 function App() {
   // console.log(playersPromise);
   const playersPromise = playersfatch();
+  const [coin, setCoin] = useState(1200);
 
   return (
     <>
-      <Navbar />
+      <Navbar coin={coin} />
       <Baner />
       <Suspense fallback={<div>Loading...</div>}>
-        <Players playersPromise={playersPromise} />
+        <Players
+          playersPromise={playersPromise}
+          coin={coin}
+          setCoin={setCoin}
+        />
       </Suspense>
     </>
   );
