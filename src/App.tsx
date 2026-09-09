@@ -12,8 +12,9 @@ const playersfatch = async (): Promise<PlayersTypes[]> => {
 
 function App() {
   // console.log(playersPromise);
-  const playersPromise = playersfatch();
-  const [coin, setCoin] = useState(1200);
+  // const playersPromise = playersfatch();
+  const [playersPromise] = useState(() => playersfatch());
+  const [coin, setCoin] = useState(2500);
 
   return (
     <>

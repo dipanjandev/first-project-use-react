@@ -1,3 +1,5 @@
+// PlayerCard.tsx
+
 import type { PlayersTypes } from "../../Types/Types";
 import { FaUser } from "react-icons/fa";
 import { MdSportsCricket } from "react-icons/md";
@@ -9,9 +11,17 @@ interface iPropsForType {
   player: PlayersTypes;
   coin: number;
   setCoin: Dispatch<SetStateAction<number>>;
+  selectedPlayers: PlayersTypes[];
+  setSelectedPlayers: Dispatch<SetStateAction<PlayersTypes[]>>;
 }
 
-const PlayerCard = ({ player, coin, setCoin }: iPropsForType) => {
+const PlayerCard = ({
+  player,
+  coin,
+  setCoin,
+  selectedPlayers,
+  setSelectedPlayers,
+}: iPropsForType) => {
   const [isSelected, setIsSelected] = useState(false);
   // console.log(active);
   // console.log(coin, setCoin);
@@ -27,6 +37,9 @@ const PlayerCard = ({ player, coin, setCoin }: iPropsForType) => {
     } else {
       toast.error("No Enough Coin for buy.");
     }
+
+    // Selected Players Portion
+    setSelectedPlayers([...selectedPlayers, player]);
   };
 
   return (
